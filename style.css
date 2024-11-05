@@ -111,7 +111,7 @@ body {
 
 .inp {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .inp .cont {
@@ -124,6 +124,11 @@ body {
     /* display: flex;
     justify-content: center;
     align-items: center; */
+
+}
+
+.inp .a1 {
+    margin-left:30px;
 
 }
 
@@ -142,6 +147,11 @@ body {
 
     }
 
+    .inp .a1 {
+    margin-left:0;
+
+}
+
     .cont {
         margin-top: 20px;
     }
@@ -154,6 +164,11 @@ body {
         display: block;
 
     }
+
+    .inp .a1 {
+    margin-left:0;
+
+}
 
     .cont {
         margin-top: 20px;
@@ -176,6 +191,10 @@ body {
         width: max-content;
     }
 
+    .inp .a1 {
+    margin-left:0;
+
+    }
 
 
 }

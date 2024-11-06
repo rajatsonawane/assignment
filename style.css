@@ -6,9 +6,13 @@ body {
     letter-spacing: 0.5px;
 }
 
+p{
+    font-weight: bold;
+}
+
 /* Outer Container */
 .outer-container {
-    width: 80%;
+    width: 49%;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #ffffff;
@@ -25,6 +29,24 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.new-title {
+    font-size: 2.5rem;
+    color: #333;
+    /* text-align: center; */
+    margin-bottom: 1.5rem;
+}
+
+.title-fonts{
+    line-height: 30px;
+}
+
+.gradient{
+    background: linear-gradient(90deg, #ff00bc, #c600c6); /* Adjust the gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Makes the text color transparent */
+}
+
 /* Content Container */
 .content-container {
     display: flex;
@@ -36,7 +58,7 @@ body {
 
 /* Text Content */
 .text-content {
-    max-width: 60%;
+    /* max-width: 60%; */
     color: #555;
     text-align: left;
 }
@@ -107,6 +129,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .inp {
@@ -138,6 +161,10 @@ body {
     color: #000;
 }
 
+.body-text{
+    margin-left: 110px;
+}
+
 /* Responsive CSS */
 
 /* For Tablet Sreen */
@@ -159,42 +186,30 @@ body {
 }
 
 /* For Surface Pro 7 */
-@media only screen and (max-width: 912px) {
-    .inp {
-        display: block;
-
+@media only screen and (max-width: 879px) {
+    .body-text{
+        margin-left: auto;
     }
-
-    .inp .a1 {
-    margin-left:0;
 
 }
 
-    .cont {
-        margin-top: 20px;
+@media only screen and (max-width: 700px) {
+    .buttons{
+        display: block;
     }
 
 }
 
 /* For Mobile Screens */
 @media only screen and (max-width: 430px) {
-    .content-container {
-        display: block;
-
-    }
-
-    img {
-        margin-top: 25px;
+    .body-text{
+        margin-left: 0;
     }
 
     h1 {
         width: max-content;
     }
 
-    .inp .a1 {
-    margin-left:0;
-
-    }
-
+    
 
 }
